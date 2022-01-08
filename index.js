@@ -2,7 +2,7 @@
     let container = document.getElementById("showna")
     async function getmovie() {
         let moviename = document.getElementById("take").value;
-        let res = await fetch(`http://www.omdbapi.com/?apikey=d51aa006&t=${moviename}`)
+        let res = await fetch(`https://www.omdbapi.com/?apikey=d51aa006&t=${moviename}`)
         let data = await res.json();
         console.log(data);
 
